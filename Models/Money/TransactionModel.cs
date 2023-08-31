@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
-
+using PFMBackend.Models;
 namespace PFMBackend.Models
 {
     public enum TransactionType
@@ -22,11 +22,15 @@ namespace PFMBackend.Models
         public decimal Amount { get; set; }
         public string? Description { get; set; }
         [Required]
-        public TransactionType Type { get; set; } 
+        public TransactionType TransactionType { get; set; } 
+
         public int AccountId { get; set; }
-        public AccountModel? Account { get; set; }
+        public virtual AccountModel Account { get; set; }
+
         public int CategoryId { get; set; }
-        public CategoryModel? Category { get; set; }
-        
+        public virtual CategoryModel Category { get; set; }
+
+        public string UserId { get; set; }
+        public virtual ApplicationUser User { get; set; }
     }
 }

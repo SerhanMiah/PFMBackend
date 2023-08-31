@@ -4,17 +4,17 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
+using PFMBackend.Models;
 
 namespace PFMBackend.Models
 {
-
-        public enum Currency
+    public enum Currency
     {
-        USD, // United States Dollar
-        EUR, // Euro
-        GBP, // British Pound Sterling
-        JPY, // Japanese Yen
-        AUD, // Australian Dollar
+        USD,
+        EUR,
+        GBP,
+        JPY,
+        AUD
     }
 
     public class ApplicationUser : IdentityUser
@@ -31,16 +31,17 @@ namespace PFMBackend.Models
         [StringLength(250)]
         public string? ProfilePictureUrl { get; set; }
 
-        [Range(0, double.MaxValue)]
-        public decimal TotalIncome { get; set; }
-
-        [Range(0, double.MaxValue)]
-        public decimal Budget { get; set; }
-
-        [StringLength(5)] 
         public Currency? CurrencyPreference { get; set; }
 
-        public ICollection<TransactionModel>? Transactions { get; set; }
+        [Range(0, double.MaxValue)]
+        public decimal TotalBalance { get; set; }
 
+        public virtual ICollection<FinanceGoal> FinancialGoals { get; set; }
+
+        public virtual ICollection<AccountModel> Accounts { get; set; }
+
+        public virtual ICollection<TransactionModel> Transactions { get; set; }
+
+        public virtual ICollection<CategoryModel> TransactionCategories { get; set; }
     }
 }

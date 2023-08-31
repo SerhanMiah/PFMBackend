@@ -6,17 +6,23 @@ using System.Threading.Tasks;
 
 namespace PFMBackend.Models
 {
+    public enum AccountType
+    {
+        Checking,
+        Savings,
+        CreditCard,
+        Investment
+    }
+
     public class AccountModel
     {
-
         [Key]
         public int Id { get; set; }
         [Required]
         public string? Name { get; set; }
         [Required]
         public decimal Balance { get; set; }
-        public string? AccountType { get; set; } 
-        public ICollection<TransactionModel>? Transactions { get; set; }
-        
+        public AccountType AccountType { get; set; }
+        public virtual ICollection<TransactionModel> Transactions { get; set; }
     }
 }

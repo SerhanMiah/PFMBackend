@@ -41,3 +41,12 @@ C:\Users\serha\Documents\build\PFMBackend\obj\Debug\net7.0\refint\PFMBackend.dll
 C:\Users\serha\Documents\build\PFMBackend\obj\Debug\net7.0\PFMBackend.pdb
 C:\Users\serha\Documents\build\PFMBackend\obj\Debug\net7.0\PFMBackend.genruntimeconfig.cache
 C:\Users\serha\Documents\build\PFMBackend\obj\Debug\net7.0\ref\PFMBackend.dll
+C:\Users\serha\Documents\build\PFMBackend\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\serha\Documents\build\PFMBackend\bin\Debug\net7.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+C:\Users\serha\Documents\build\PFMBackend\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\serha\Documents\build\PFMBackend\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\serha\Documents\build\PFMBackend\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\serha\Documents\build\PFMBackend\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\serha\Documents\build\PFMBackend\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\serha\Documents\build\PFMBackend\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\serha\Documents\build\PFMBackend\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll

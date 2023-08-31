@@ -8,7 +8,7 @@ namespace PFMBackend.Models
 {
     public class RegisterViewModel
     {
-        [Required]  
+        [Required]
         [EmailAddress]
         public string? Email { get; set; }
 
@@ -28,5 +28,8 @@ namespace PFMBackend.Models
         public string? PostalCode { get; set; }
         public string? Country { get; set; }
         
+        public string? ProfilePictureUrl { get; set; }
+        public Currency? CurrencyPreference { get; set; }
     }
+
 }
